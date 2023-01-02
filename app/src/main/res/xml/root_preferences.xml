@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+
+        <ListPreference
+            app:key="darkMode"
+            app:defaultValue="1"
+            app:useSimpleSummaryProvider="true"
+            app:title="@string/sync_title"
+            app:entries="@array/darkMode"
+            app:entryValues="@array/darkModeValues"/>
+
+
+        <Preference
+            app:summary="Click para conocer la empresa"
+            app:title="Website">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.alternova.co/"/>
+        </Preference>
+
+
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

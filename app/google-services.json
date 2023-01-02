@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "349445387625",
+    "project_id": "leginstore-81432",
+    "storage_bucket": "leginstore-81432.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349445387625:android:b891b2b0b4f3a1d3ce39f8",
+        "android_client_info": {
+          "package_name": "com.svape.legostore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349445387625-h9uas9vbks6fjhfvnibq3jfk2vmglavu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.svape.legostore",
+            "certificate_hash": "ea0c8ef5b950f380d4ee45c7b35798da9e7d4ca5"
+          }
+        },
+        {
+          "client_id": "349445387625-l1iq1ppm49i2pfo2himgncolnfl3nbgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIc1P5zZvYkTzHh5U2ky8-CBbAXzd4gp0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349445387625-l1iq1ppm49i2pfo2himgncolnfl3nbgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
