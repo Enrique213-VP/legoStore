@@ -2,6 +2,7 @@ package com.svape.legostore.ui.fragment.dashboard.adapters.concat
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.svape.legostore.core.BaseConcatHolder
 import com.svape.legostore.databinding.StoreAllRowBinding
@@ -26,10 +27,9 @@ class StoreConcatAdapter(private val storeAdapter: StoreAdapter) :
     private inner class ConcatViewHolder(val binding: StoreAllRowBinding) :
         BaseConcatHolder<StoreAdapter>(binding.root) {
         override fun bind(adapter: StoreAdapter) {
+            // Configurar el RecyclerView con un GridLayoutManager de 2 columnas
+            binding.rvProducts.layoutManager = GridLayoutManager(binding.root.context, 2)
             binding.rvProducts.adapter = adapter
         }
-
     }
-
-
 }

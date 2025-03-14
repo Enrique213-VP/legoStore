@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.svape.legostore'
-    compileSdk 32
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.svape.legostore"
         minSdk 24
-        targetSdk 32
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -34,6 +34,7 @@ android {
     }
     buildFeatures {
         viewBinding true
+        buildConfig = true
     }
 
     dataBinding {
@@ -43,7 +44,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.16.0-beta01'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -51,16 +52,17 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.3.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.activity:activity:1.8.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
     //Firebase
-    implementation 'com.google.firebase:firebase-database:19.2.1'
-    implementation platform('com.google.firebase:firebase-bom:31.0.2')
+    implementation 'com.google.firebase:firebase-database:21.0.0'
+    implementation platform('com.google.firebase:firebase-bom:33.10.0')
     implementation 'com.google.firebase:firebase-firestore-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.0.5'
+    implementation 'com.google.firebase:firebase-auth-ktx:23.2.0'
     implementation 'com.google.firebase:firebase-storage-ktx'
 
     //Navigation Component

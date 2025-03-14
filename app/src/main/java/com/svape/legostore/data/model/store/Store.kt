@@ -1,6 +1,7 @@
 package com.svape.legostore.data.model.store
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 /*
  *
@@ -18,6 +19,6 @@ data class Store (
     val unitPrice: Long = -1,
     val stock: Long = -1,
     val image: String = ""
-        )
+        ) : Serializable
 
 data class ProductsList(val products: List<Store> = listOf())

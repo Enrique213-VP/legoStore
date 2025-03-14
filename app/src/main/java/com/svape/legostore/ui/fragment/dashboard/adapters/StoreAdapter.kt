@@ -46,8 +46,12 @@ class StoreAdapter(
         val context: Context
     ) : BaseViewHolder<Store>(binding.root) {
         override fun bind(item: Store) {
-            Glide.with(context).load("${item.image}")
-                .centerCrop().into(binding.imageProduct)
+            Glide.with(context)
+                .load("${item.image}")
+                .centerCrop()
+                .transition(com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade())
+                .error(android.R.drawable.ic_dialog_alert)
+                .into(binding.imageProduct)
         }
     }
 }

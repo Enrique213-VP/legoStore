@@ -28,6 +28,8 @@ object Constants {
 
     const val UserProfileImage = "UserProfileImage"
 
+    const val keyDetaikProducts = "product"
+
     fun showImageChoose(activity: Activity) {
 
         //An intent for launching the image selection of phone storage

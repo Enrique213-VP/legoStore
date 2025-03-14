@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
     <!-- App -->
-    <color name="primaryColor">#ffd500</color>
-    <color name="primaryColorLight">#ffff52</color>
-    <color name="primaryColorDark">#c7a400</color>
-    <color name="secondaryColor">#292929</color>
-    <color name="secondaryColorLight">#515151</color>
-    <color name="secondaryColorDark">#000000</color>
-    <color name="blue">#3F51B5</color>
+    <color name="primaryColor">#FFCC00</color> <!-- Amarillo más equilibrado -->
+    <color name="primaryColorLight">#FFE066</color> <!-- Amarillo más suave -->
+    <color name="primaryColorDark">#D4A400</color> <!-- Versión más oscura para contraste -->
 
+    <color name="secondaryColor">#424242</color> <!-- Gris oscuro refinado -->
+    <color name="secondaryColorLight">#6D6D6D</color>
+    <color name="secondaryColorDark">#212121</color>
+
+    <color name="accentRed">#DA291C</color> <!-- Rojo LEGO para botones o acentos -->
+    <color name="accentBlue">#0057A6</color> <!-- Azul LEGO para realces -->
+    <color name="blue">#3F51B5</color>
 </resources>

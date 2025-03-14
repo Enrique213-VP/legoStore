@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.ConcatAdapter
 import com.svape.legostore.R
+import com.svape.legostore.core.Constants
 import com.svape.legostore.core.Resource
 import com.svape.legostore.data.model.store.Store
 import com.svape.legostore.data.remote.StoreDataSource
@@ -18,6 +19,7 @@ import com.svape.legostore.presentation.StoreViewModel
 import com.svape.legostore.presentation.StoreViewModelFactory
 import com.svape.legostore.repository.RetrofitClient
 import com.svape.legostore.repository.StoreRepositoryImpl
+import com.svape.legostore.ui.activity.ProductDetailActivity
 import com.svape.legostore.ui.activity.USettingsActivity
 import com.svape.legostore.ui.fragment.dashboard.adapters.StoreAdapter
 import com.svape.legostore.ui.fragment.dashboard.adapters.concat.StoreConcatAdapter
@@ -94,12 +96,14 @@ class DashboardFragment : Fragment(), StoreAdapter.OnStoreClickListener {
         return root
     }
 
+    @Deprecated("Deprecated in Java")
     @Suppress("DEPRECATION")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.dashboard_menu, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+    @Deprecated("Deprecated in Java")
     @Suppress("DEPRECATION")
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
@@ -112,12 +116,15 @@ class DashboardFragment : Fragment(), StoreAdapter.OnStoreClickListener {
         return super.onOptionsItemSelected(item)
     }
 
+    override fun onStoreClick(store: Store) {
+        Log.d("Products", "OnClick: $store")
+        val intent = Intent(requireActivity(), ProductDetailActivity::class.java)
+        intent.putExtra(Constants.keyDetaikProducts, store)
+        startActivity(intent)
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-
-    override fun onStoreClick(store: Store) {
-        Log.d("Products", "OnClick: $store")
     }
 }
